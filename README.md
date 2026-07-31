@@ -1,20 +1,30 @@
 # Bright QR
 
-Bright QR is a native Android demonstration of localized HDR brightness. It keeps
-the ordinary app interface at the user's normal SDR brightness while rendering a
-QR code in a dedicated 10-bit BT.2020 PQ `SurfaceView` and requesting all HDR
-headroom Android currently permits.
+Bright QR is a cross-platform demonstration of localized HDR/EDR brightness. It
+keeps the ordinary app interface at the user's normal SDR brightness while only a
+dedicated QR rendering surface consumes the additional luminance currently made
+available by Android or iOS.
 
 The goal is deliberately narrow:
 
-> Make QR white as bright as Android allows on the phone running the app, without
-> raising the brightness of the surrounding interface.
+> Make QR white as bright as the operating system allows on the phone running the
+> app, without raising the brightness of the surrounding interface.
 
-This repository contains the complete Android project, a developer headroom dial,
-repeatable brightness presets, an SDR-white reference, live device diagnostics,
-copyable test reports, light/dark themes, and a realistic movie-seat QR payload.
+This repository contains complete native Android and iOS projects, SDR-white
+references, live display diagnostics, copyable test reports, system light/dark
+themes, and the same realistic movie-seat QR payload on both platforms.
 
-## Download
+## Platforms
+
+| Platform | Localized rendering path | Status |
+| --- | --- | --- |
+| Android | 10-bit BT.2020 PQ `SurfaceView` plus requested HDR headroom | Pixel 9a physically validated; signed APK published |
+| iOS 16+ | `rgba16Float` Metal layer with extended-linear Display P3 and EDR enabled | Implementation complete; physical iPhone 13 validation pending |
+
+The iOS project, build instructions, architecture, and controlled test procedure
+are documented in [ios/README.md](ios/README.md).
+
+## Android download
 
 [**Download the latest signed APK**](https://github.com/loudsun1997/bright-qr/releases/latest/download/bright-qr.apk)
 
@@ -23,7 +33,7 @@ open the download. Published APKs are signed with the project's permanent releas
 key and include a SHA-256 checksum on the release page. Developers who only need
 the source can use the debug build instructions below.
 
-## Screenshots
+## Android screenshots
 
 <p align="center">
   <img src="docs/images/bright-qr-controls.png" width="390" alt="Bright QR controls, HDR headroom presets, SDR reference swatch, and QR code on a Pixel 9a">

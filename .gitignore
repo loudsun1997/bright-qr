@@ -8,3 +8,6 @@ keystore.properties
 **/build/
 captures/
 .DS_Store
+DerivedData/
+xcuserdata/
+*.xcuserstate

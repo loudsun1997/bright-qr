@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3170F1D8C063DE34E3E35612 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC9F6D7F8914390855849F5 /* MetalKit.framework */; };
+		34693F4FF3427392ABA9DD99 /* EDRDisplayInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C39DE3C4B3F73039C4EBCA /* EDRDisplayInfo.swift */; };
+		49EA6083A8AA1156EE10598E /* EDRRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7E63F4910A0CAFF8C07A88 /* EDRRenderer.swift */; };
+		640774B4B63D07AC41CA124A /* EDRTestMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFEC979C612A203D009E1C5 /* EDRTestMode.swift */; };
+		70B3FF253E82AA5376D2F79A /* EDRMetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEBAEE19688E918ECD34DF4 /* EDRMetalView.swift */; };
+		78445BDE1935B8BB4A131E00 /* QRGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398E3C131EAD56F4CB768C53 /* QRGenerator.swift */; };
+		7AC6EEBE45651E4CFD76B10E /* EDRDiagnosticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324834FA9D1BBE225C40ACE7 /* EDRDiagnosticsView.swift */; };
+		7C326A7DA75F84152AB96D8C /* DisplayMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FCFC1D67F3B75DD9CD3E55 /* DisplayMetrics.swift */; };
+		92FEA82C1AAEC2401B6281B0 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05A110A7E7B5BF2717BEDFDB /* CoreImage.framework */; };
+		96AED6C4A2DECD1A6A5E9E1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C975FC17656AEC825D5B3A /* ContentView.swift */; };
+		C1E8E83627154B4FB29B1D29 /* BrightQRApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE403814616CA71EA1EE1C88 /* BrightQRApp.swift */; };
+		DF3AF481F3D08C632611FD64 /* QRMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BEA9D976EEDE49EC3B0C8 /* QRMatrix.swift */; };
+		DFB1755018F0FD2BDC257DB6 /* QRLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DD442B8444B5B7E9C902DD /* QRLayout.swift */; };
+		E95E45956895D741EF96FCED /* EDRUniforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA33EA956E616963DB6380BB /* EDRUniforms.swift */; };
+		FDB410711C44BDC90B9FEC07 /* QRShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = EC90891ECC759797CA86591D /* QRShaders.metal */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		05A110A7E7B5BF2717BEDFDB /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		07C975FC17656AEC825D5B3A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		17C39DE3C4B3F73039C4EBCA /* EDRDisplayInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDRDisplayInfo.swift; sourceTree = "<group>"; };
+		324834FA9D1BBE225C40ACE7 /* EDRDiagnosticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDRDiagnosticsView.swift; sourceTree = "<group>"; };
+		398E3C131EAD56F4CB768C53 /* QRGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRGenerator.swift; sourceTree = "<group>"; };
+		5CEBAEE19688E918ECD34DF4 /* EDRMetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDRMetalView.swift; sourceTree = "<group>"; };
+		5CFEC979C612A203D009E1C5 /* EDRTestMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDRTestMode.swift; sourceTree = "<group>"; };
+		86FCFC1D67F3B75DD9CD3E55 /* DisplayMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayMetrics.swift; sourceTree = "<group>"; };
+		B32A64C19AA90F7957712A2F /* BrightQRiOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = BrightQRiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8DD442B8444B5B7E9C902DD /* QRLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRLayout.swift; sourceTree = "<group>"; };
+		BA33EA956E616963DB6380BB /* EDRUniforms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDRUniforms.swift; sourceTree = "<group>"; };
+		CE403814616CA71EA1EE1C88 /* BrightQRApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightQRApp.swift; sourceTree = "<group>"; };
+		EC7E63F4910A0CAFF8C07A88 /* EDRRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDRRenderer.swift; sourceTree = "<group>"; };
+		EC90891ECC759797CA86591D /* QRShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = QRShaders.metal; sourceTree = "<group>"; };
+		EF2BEA9D976EEDE49EC3B0C8 /* QRMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRMatrix.swift; sourceTree = "<group>"; };
+		EFC9F6D7F8914390855849F5 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		547AA03E8446D171888DE4E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3170F1D8C063DE34E3E35612 /* MetalKit.framework in Frameworks */,
+				92FEA82C1AAEC2401B6281B0 /* CoreImage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19B0B1C4FF4C318B92831403 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				86FCFC1D67F3B75DD9CD3E55 /* DisplayMetrics.swift */,
+				324834FA9D1BBE225C40ACE7 /* EDRDiagnosticsView.swift */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		47EFBD9BB46562A658509A6B /* EDR */ = {
+			isa = PBXGroup;
+			children = (
+				17C39DE3C4B3F73039C4EBCA /* EDRDisplayInfo.swift */,
+				5CEBAEE19688E918ECD34DF4 /* EDRMetalView.swift */,
+				EC7E63F4910A0CAFF8C07A88 /* EDRRenderer.swift */,
+				5CFEC979C612A203D009E1C5 /* EDRTestMode.swift */,
+				BA33EA956E616963DB6380BB /* EDRUniforms.swift */,
+				EC90891ECC759797CA86591D /* QRShaders.metal */,
+			);
+			path = EDR;
+			sourceTree = "<group>";
+		};
+		4D0DABA3980658A01B6FF516 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B32A64C19AA90F7957712A2F /* BrightQRiOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A8EB9DBF8B14BF914DADEBA /* BrightQRiOS */ = {
+			isa = PBXGroup;
+			children = (
+				A561DC787F9339DB8124833B /* App */,
+				19B0B1C4FF4C318B92831403 /* Debug */,
+				47EFBD9BB46562A658509A6B /* EDR */,
+				B7F743E4910FBC8DC1688671 /* QR */,
+			);
+			path = BrightQRiOS;
+			sourceTree = "<group>";
+		};
+		A561DC787F9339DB8124833B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CE403814616CA71EA1EE1C88 /* BrightQRApp.swift */,
+				07C975FC17656AEC825D5B3A /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B7F743E4910FBC8DC1688671 /* QR */ = {
+			isa = PBXGroup;
+			children = (
+				398E3C131EAD56F4CB768C53 /* QRGenerator.swift */,
+				B8DD442B8444B5B7E9C902DD /* QRLayout.swift */,
+				EF2BEA9D976EEDE49EC3B0C8 /* QRMatrix.swift */,
+			);
+			path = QR;
+			sourceTree = "<group>";
+		};
+		C0CA2B5F31F93A946582B9B6 = {
+			isa = PBXGroup;
+			children = (
+				9A8EB9DBF8B14BF914DADEBA /* BrightQRiOS */,
+				F032B842F4BF07B490992246 /* Frameworks */,
+				4D0DABA3980658A01B6FF516 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F032B842F4BF07B490992246 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05A110A7E7B5BF2717BEDFDB /* CoreImage.framework */,
+				EFC9F6D7F8914390855849F5 /* MetalKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0DB74C562891A81F605E6D1 /* BrightQRiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 687FACA895FF410DA10AF56F /* Build configuration list for PBXNativeTarget "BrightQRiOS" */;
+			buildPhases = (
+				08923B1C16B142EA9CBCB75D /* Sources */,
+				547AA03E8446D171888DE4E7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BrightQRiOS;
+			packageProductDependencies = (
+			);
+			productName = BrightQRiOS;
+			productReference = B32A64C19AA90F7957712A2F /* BrightQRiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FDCE1155C6308EDCE68293E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 8774D2BEDD1DC7508DFACE85 /* Build configuration list for PBXProject "BrightQRiOS" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = C0CA2B5F31F93A946582B9B6;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4D0DABA3980658A01B6FF516 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0DB74C562891A81F605E6D1 /* BrightQRiOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08923B1C16B142EA9CBCB75D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1E8E83627154B4FB29B1D29 /* BrightQRApp.swift in Sources */,
+				96AED6C4A2DECD1A6A5E9E1D /* ContentView.swift in Sources */,
+				7C326A7DA75F84152AB96D8C /* DisplayMetrics.swift in Sources */,
+				7AC6EEBE45651E4CFD76B10E /* EDRDiagnosticsView.swift in Sources */,
+				34693F4FF3427392ABA9DD99 /* EDRDisplayInfo.swift in Sources */,
+				70B3FF253E82AA5376D2F79A /* EDRMetalView.swift in Sources */,
+				49EA6083A8AA1156EE10598E /* EDRRenderer.swift in Sources */,
+				640774B4B63D07AC41CA124A /* EDRTestMode.swift in Sources */,
+				E95E45956895D741EF96FCED /* EDRUniforms.swift in Sources */,
+				78445BDE1935B8BB4A131E00 /* QRGenerator.swift in Sources */,
+				DFB1755018F0FD2BDC257DB6 /* QRLayout.swift in Sources */,
+				DF3AF481F3D08C632611FD64 /* QRMatrix.swift in Sources */,
+				FDB410711C44BDC90B9FEC07 /* QRShaders.metal in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0129F93369208453B54F07DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Bright QR";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.brightqr.ios;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6C1FA933E1454E2619BE20DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		890D45FDBE29AB1EA712F851 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Bright QR";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.brightqr.ios;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E0E9097FB538E900B9AFF5B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		687FACA895FF410DA10AF56F /* Build configuration list for PBXNativeTarget "BrightQRiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0129F93369208453B54F07DE /* Debug */,
+				890D45FDBE29AB1EA712F851 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8774D2BEDD1DC7508DFACE85 /* Build configuration list for PBXProject "BrightQRiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C1FA933E1454E2619BE20DD /* Debug */,
+				E0E9097FB538E900B9AFF5B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FDCE1155C6308EDCE68293E /* Project object */;
+}
