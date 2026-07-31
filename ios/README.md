@@ -94,9 +94,10 @@ xcodebuild \
   build
 ```
 
-The repository's iOS GitHub Actions workflow runs this build on every iOS pull
-request. A simulator can validate compilation and SDR fallback behavior, but only
-a compatible physical display can validate localized EDR luminance.
+The repository's iOS GitHub Actions workflow runs this build and the QR/layout
+unit tests on every iOS pull request. A simulator can validate compilation, QR
+orientation, binary matrix generation, integer layout, and SDR fallback behavior,
+but only a compatible physical display can validate localized EDR luminance.
 
 ## Source layout
 

@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22BB24E09D4D6D5C1362B9FD /* QRLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2C3D23BD332F87ABF870A4 /* QRLayoutTests.swift */; };
 		3170F1D8C063DE34E3E35612 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC9F6D7F8914390855849F5 /* MetalKit.framework */; };
 		34693F4FF3427392ABA9DD99 /* EDRDisplayInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C39DE3C4B3F73039C4EBCA /* EDRDisplayInfo.swift */; };
+		3863DBD19CBDEC97156FF5AD /* QRGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80AEDFFAA82614C2FF30238 /* QRGeneratorTests.swift */; };
 		49EA6083A8AA1156EE10598E /* EDRRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7E63F4910A0CAFF8C07A88 /* EDRRenderer.swift */; };
 		640774B4B63D07AC41CA124A /* EDRTestMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFEC979C612A203D009E1C5 /* EDRTestMode.swift */; };
 		70B3FF253E82AA5376D2F79A /* EDRMetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEBAEE19688E918ECD34DF4 /* EDRMetalView.swift */; };
@@ -24,16 +26,29 @@
 		FDB410711C44BDC90B9FEC07 /* QRShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = EC90891ECC759797CA86591D /* QRShaders.metal */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C707B16FCD0C20738B4F7411 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FDCE1155C6308EDCE68293E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0DB74C562891A81F605E6D1;
+			remoteInfo = BrightQRiOS;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		05A110A7E7B5BF2717BEDFDB /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		07C975FC17656AEC825D5B3A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		17C39DE3C4B3F73039C4EBCA /* EDRDisplayInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDRDisplayInfo.swift; sourceTree = "<group>"; };
 		324834FA9D1BBE225C40ACE7 /* EDRDiagnosticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDRDiagnosticsView.swift; sourceTree = "<group>"; };
+		3578F42209ED66AC26DD73D3 /* BrightQRiOSTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = BrightQRiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		398E3C131EAD56F4CB768C53 /* QRGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRGenerator.swift; sourceTree = "<group>"; };
 		5CEBAEE19688E918ECD34DF4 /* EDRMetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDRMetalView.swift; sourceTree = "<group>"; };
 		5CFEC979C612A203D009E1C5 /* EDRTestMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDRTestMode.swift; sourceTree = "<group>"; };
 		86FCFC1D67F3B75DD9CD3E55 /* DisplayMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayMetrics.swift; sourceTree = "<group>"; };
+		9A2C3D23BD332F87ABF870A4 /* QRLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRLayoutTests.swift; sourceTree = "<group>"; };
 		B32A64C19AA90F7957712A2F /* BrightQRiOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = BrightQRiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B80AEDFFAA82614C2FF30238 /* QRGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRGeneratorTests.swift; sourceTree = "<group>"; };
 		B8DD442B8444B5B7E9C902DD /* QRLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRLayout.swift; sourceTree = "<group>"; };
 		BA33EA956E616963DB6380BB /* EDRUniforms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDRUniforms.swift; sourceTree = "<group>"; };
 		CE403814616CA71EA1EE1C88 /* BrightQRApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightQRApp.swift; sourceTree = "<group>"; };
@@ -82,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				B32A64C19AA90F7957712A2F /* BrightQRiOS.app */,
+				3578F42209ED66AC26DD73D3 /* BrightQRiOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,9 +136,19 @@
 			isa = PBXGroup;
 			children = (
 				9A8EB9DBF8B14BF914DADEBA /* BrightQRiOS */,
+				C9DF29DE14E4DF76248B433D /* BrightQRiOSTests */,
 				F032B842F4BF07B490992246 /* Frameworks */,
 				4D0DABA3980658A01B6FF516 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		C9DF29DE14E4DF76248B433D /* BrightQRiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				B80AEDFFAA82614C2FF30238 /* QRGeneratorTests.swift */,
+				9A2C3D23BD332F87ABF870A4 /* QRLayoutTests.swift */,
+			);
+			path = BrightQRiOSTests;
 			sourceTree = "<group>";
 		};
 		F032B842F4BF07B490992246 /* Frameworks */ = {
@@ -155,6 +181,24 @@
 			productReference = B32A64C19AA90F7957712A2F /* BrightQRiOS.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B0EEBA38B8F18532DF7EB608 /* BrightQRiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A5E685B0CAF3BC299381243 /* Build configuration list for PBXNativeTarget "BrightQRiOSTests" */;
+			buildPhases = (
+				6A56CD54C329A54B6CFD89C6 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AB147756E436419656595FD /* PBXTargetDependency */,
+			);
+			name = BrightQRiOSTests;
+			packageProductDependencies = (
+			);
+			productName = BrightQRiOSTests;
+			productReference = 3578F42209ED66AC26DD73D3 /* BrightQRiOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -181,6 +225,7 @@
 			projectRoot = "";
 			targets = (
 				A0DB74C562891A81F605E6D1 /* BrightQRiOS */,
+				B0EEBA38B8F18532DF7EB608 /* BrightQRiOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -206,7 +251,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6A56CD54C329A54B6CFD89C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3863DBD19CBDEC97156FF5AD /* QRGeneratorTests.swift in Sources */,
+				22BB24E09D4D6D5C1362B9FD /* QRLayoutTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7AB147756E436419656595FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0DB74C562891A81F605E6D1 /* BrightQRiOS */;
+			targetProxy = C707B16FCD0C20738B4F7411 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0129F93369208453B54F07DE /* Debug */ = {
@@ -229,6 +291,24 @@
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6232327868322B0219B136FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.brightqr.ios.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrightQRiOS.app/BrightQRiOS";
 			};
 			name = Debug;
 		};
@@ -378,6 +458,24 @@
 			};
 			name = Release;
 		};
+		F800B64199C53F373F0BF843 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.brightqr.ios.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrightQRiOS.app/BrightQRiOS";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -395,6 +493,15 @@
 			buildConfigurations = (
 				6C1FA933E1454E2619BE20DD /* Debug */,
 				E0E9097FB538E900B9AFF5B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8A5E685B0CAF3BC299381243 /* Build configuration list for PBXNativeTarget "BrightQRiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6232327868322B0219B136FF /* Debug */,
+				F800B64199C53F373F0BF843 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

@@ -34,11 +34,29 @@ targets:
       - sdk: MetalKit.framework
       - sdk: CoreImage.framework
 
+  BrightQRiOSTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: BrightQRiOSTests
+    dependencies:
+      - target: BrightQRiOS
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.brightqr.ios.tests
+        GENERATE_INFOPLIST_FILE: YES
+        IPHONEOS_DEPLOYMENT_TARGET: "16.0"
+
 schemes:
   BrightQRiOS:
     build:
       targets:
         BrightQRiOS: all
+        BrightQRiOSTests: [test]
+    test:
+      config: Debug
+      targets:
+        - BrightQRiOSTests
     run:
       config: Debug
     archive:

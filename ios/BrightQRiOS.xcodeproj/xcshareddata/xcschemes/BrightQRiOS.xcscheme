@@ -21,6 +21,20 @@
                ReferencedContainer = "container:BrightQRiOS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B0EEBA38B8F18532DF7EB608"
+               BuildableName = "BrightQRiOSTests.xctest"
+               BlueprintName = "BrightQRiOSTests"
+               ReferencedContainer = "container:BrightQRiOS.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -39,7 +53,20 @@
          </BuildableReference>
       </MacroExpansion>
       <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B0EEBA38B8F18532DF7EB608"
+               BuildableName = "BrightQRiOSTests.xctest"
+               BlueprintName = "BrightQRiOSTests"
+               ReferencedContainer = "container:BrightQRiOS.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <CommandLineArguments>
+      </CommandLineArguments>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"

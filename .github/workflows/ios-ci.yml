@@ -39,3 +39,15 @@ jobs:
             CODE_SIGNING_ALLOWED=NO \
             COMPILER_INDEX_STORE_ENABLE=NO \
             build
+
+      - name: Run iOS unit tests
+        run: |
+          xcodebuild \
+            -project ios/BrightQRiOS.xcodeproj \
+            -scheme BrightQRiOS \
+            -configuration Debug \
+            -destination 'platform=iOS Simulator,name=iPhone 16 Pro,OS=latest' \
+            -derivedDataPath "${RUNNER_TEMP}/BrightQRTestDerivedData" \
+            CODE_SIGNING_ALLOWED=NO \
+            COMPILER_INDEX_STORE_ENABLE=NO \
+            test
