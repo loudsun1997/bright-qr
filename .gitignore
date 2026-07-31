@@ -2,6 +2,9 @@
 .idea/
 *.iml
 local.properties
+*.jks
+*.keystore
+keystore.properties
 **/build/
 captures/
 .DS_Store
