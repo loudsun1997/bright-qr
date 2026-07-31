@@ -14,6 +14,15 @@ This repository contains the complete Android project, a developer headroom dial
 repeatable brightness presets, an SDR-white reference, live device diagnostics,
 copyable test reports, light/dark themes, and a realistic movie-seat QR payload.
 
+## Download
+
+[**Download the latest signed APK**](https://github.com/loudsun1997/bright-qr/releases/latest/download/bright-qr.apk)
+
+Android may ask you to allow installation from the browser or Files app used to
+open the download. Published APKs are signed with the project's permanent release
+key and include a SHA-256 checksum on the release page. Developers who only need
+the source can use the debug build instructions below.
+
 ## Screenshots
 
 <p align="center">
@@ -258,6 +267,17 @@ app/src/test/java/dev/brightqr/
 The application is intentionally implemented with platform Android views and a
 small OpenGL ES 2 renderer. ZXing Core is the only application dependency.
 
+## Releases and signing
+
+Public builds are distributed as signed APKs through GitHub Releases rather than
+committed to Git history. A tag matching `versionName` (for example, `v0.1.0`)
+starts the release workflow, which tests the project, builds and verifies the
+signed APK, generates its checksum, and publishes both files.
+
+The signing key and passwords are not present in this repository. Maintainer setup,
+local signed-build instructions, backup rules, and the release checklist are in
+[docs/RELEASING.md](docs/RELEASING.md).
+
 ## Validation
 
 Run the complete local verification suite with:
@@ -275,6 +295,8 @@ The repository currently passes:
 - 10-bit BT.2020 PQ renderer activation
 - Live 8.0× requested/delivered ratio verification
 - Wireless install and launch through ADB
+- GitHub CI for tests, lint, and debug APK artifacts
+- Tag-driven signed APK publishing through GitHub Releases
 
 Unit tests cover:
 
@@ -335,6 +357,10 @@ Bright QR:
   can reduce available output.
 - Static bright content can contribute to temporary image retention or long-term
   display wear. Avoid leaving the QR at MAX unnecessarily.
+
+## License
+
+Bright QR is available under the [Apache License 2.0](LICENSE).
 
 ## References
 
