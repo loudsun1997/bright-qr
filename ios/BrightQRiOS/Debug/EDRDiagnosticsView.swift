@@ -51,7 +51,7 @@ struct EDRDiagnosticsView: View {
             Text(label)
                 .foregroundStyle(.secondary)
             Text(value)
-                .fontDesign(.monospaced)
+                .font(.caption.monospaced())
                 .textSelection(.enabled)
         }
     }
