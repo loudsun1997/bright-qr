@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bright QR</string>
+    <string name="update_qr">Update QR</string>
+    <string name="headroom_requires_android_15">Requires Android 15</string>
+    <string name="preset_sdr_1x">SDR 1×</string>
+    <string name="preset_2x">2×</string>
+    <string name="preset_4x">4×</string>
+    <string name="preset_max">MAX</string>
+    <string name="copy_report">Copy report</string>
+    <string name="report_copied">Test report copied</string>
+    <string name="report_clip_label">Bright QR HDR test report</string>
+</resources>
