@@ -73,6 +73,10 @@ The workflow refuses to publish if the tag and `versionName` disagree. Release
 assets use the stable names `bright-qr.apk` and `bright-qr.apk.sha256`, allowing
 the README's latest-download link to remain unchanged between versions.
 
+If a workflow infrastructure or verification step fails after the tag is pushed,
+fix the workflow on `main`, then run **Publish signed APK** manually with the
+existing tag. Do not delete or move a public release tag to retry a build.
+
 ## Recovery and rotation
 
 - Back up the keystore separately from its passwords.
